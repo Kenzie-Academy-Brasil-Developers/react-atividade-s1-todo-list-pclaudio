@@ -1,0 +1,51 @@
+:root {
+  --cor-de-fundo-body: #c3c3c3;
+  --cor-de-fundo-root: #fff;
+  --cor-lista-impar: #e8e9ec;
+}
+
+body,
+header,
+main,
+div,
+form,
+input,
+button,
+span,
+h1,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  background-color: var(--cor-de-fundo-root);
+}
+
+header {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: var(--cor-de-fundo-body);
+  }
+
+  #root {
+    margin: 20px auto;
+    max-width: 500px;
+    min-height: 90vh;
+    box-shadow: 1px 1px 5px;
+  }
+
+  header {
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

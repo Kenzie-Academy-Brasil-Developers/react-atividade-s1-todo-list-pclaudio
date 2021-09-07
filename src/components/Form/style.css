@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  padding: 5px 10px;
+}
+
+input {
+  width: 69%;
+  margin-right: 5px;
+}
+
+button {
+  width: 29%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  form {
+    margin-bottom: 20px;
+  }
+}
