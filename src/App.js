@@ -8,7 +8,9 @@ const App = () => {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (newTodo) => {
-    setTodos([...todos, newTodo]);
+    if (newTodo.trim() !== "") {
+      setTodos([...todos, newTodo]);
+    }
   };
 
   const handleTodo = (todoCompleted) => {
